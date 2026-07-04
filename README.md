@@ -31,14 +31,9 @@ Installing as plugins registers everything automatically: slash commands, person
 | **claude-plans** | Archives finalized implementation plans to project-local plans/ directories with lifecycle status and a global cross-project index | [claude-plans-skill](https://github.com/code-katz/claude-plans-skill) |
 | **claude-devlog** | Structured development changelog (DEVLOG.md): decisions, milestones, and rejected alternatives with supersession markers and archiving | [claude-devlog-skill](https://github.com/code-katz/claude-devlog-skill) |
 | **claude-roadmap** | Living product roadmap (ROADMAP.md) with tiered priorities and an append-only revision history of every priority call | [claude-roadmap-skill](https://github.com/code-katz/claude-roadmap-skill) |
+| **claude-publish** | Publishes markdown to blogging platforms (Medium via gist import) with an on-brand content kit. CLI prerequisite: `pipx install git+https://github.com/code-katz/claude-publish-agent` | [claude-publish-agent](https://github.com/code-katz/claude-publish-agent) |
 
 The family is designed to work together: ideas land in `/todo`, plans get archived by `/plans`, `/parallel` (claude-team) turns a plan into isolated worktree sessions, the conductor tracks who is doing what and what merges first, `/devlog` captures what was decided and why, and `/roadmap` records how priorities evolved.
-
-## Coming to the marketplace
-
-The rest of the Code Katz family will be added as each gains a plugin manifest:
-
-- [claude-publish-agent](https://github.com/code-katz/claude-publish-agent) — publish markdown to platforms
 
 ## License
 

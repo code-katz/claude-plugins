@@ -4,8 +4,8 @@
     "name": "Code Katz"
   },
   "metadata": {
-    "description": "Claude Code plugins from Code Katz: named specialist personas with model tiers, and parallel-session coordination with merge-order tracking.",
-    "version": "1.2.0"
+    "description": "The Code Katz suite for Claude Code: specialist personas with model tiers, parallel-session coordination, and the durable-artifact skills (devlog, roadmap, plans, todo, publish).",
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -99,6 +99,22 @@
         "priorities",
         "product",
         "revision-history"
+      ]
+    },
+    {
+      "name": "claude-publish",
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-publish-agent"
+      },
+      "description": "Publish markdown to blogging platforms: Medium via the gist import flow, with a content kit (style guide, banners, post naming) that keeps published content on-brand. CLI prerequisite installs from the repo via pipx.",
+      "category": "workflow",
+      "keywords": [
+        "publish",
+        "medium",
+        "blog",
+        "markdown",
+        "content"
       ]
     }
   ]

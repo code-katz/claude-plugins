@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Claude Code plugins from Code Katz: named specialist personas with model tiers, and parallel-session coordination with merge-order tracking.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -68,6 +68,37 @@
         "plan-mode",
         "archive",
         "index"
+      ]
+    },
+    {
+      "name": "claude-devlog",
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-devlog-skill"
+      },
+      "description": "Structured development changelog (DEVLOG.md): decisions, milestones, and rejected alternatives with supersession markers and archiving. Explainable, committed memory that future sessions read before working.",
+      "category": "workflow",
+      "keywords": [
+        "devlog",
+        "changelog",
+        "decisions",
+        "memory",
+        "adr"
+      ]
+    },
+    {
+      "name": "claude-roadmap",
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-roadmap-skill"
+      },
+      "description": "Living product roadmap (ROADMAP.md) with tiered priorities and an append-only revision history: every priority call, deferral, and reprioritization recorded with its reasoning.",
+      "category": "workflow",
+      "keywords": [
+        "roadmap",
+        "priorities",
+        "product",
+        "revision-history"
       ]
     }
   ]

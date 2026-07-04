@@ -1,24 +1,74 @@
 {
   "name": "code-katz",
-  "owner": { "name": "Code Katz" },
+  "owner": {
+    "name": "Code Katz"
+  },
   "metadata": {
     "description": "Claude Code plugins from Code Katz: named specialist personas with model tiers, and parallel-session coordination with merge-order tracking.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "claude-team",
-      "source": { "source": "github", "repo": "code-katz/claude-team-cli" },
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-team-cli"
+      },
       "description": "Twelve named specialist personas: session-scoped /name switching, delegation subagents with Fable/Opus/Sonnet model tiers, a persona session launcher (claude-team launch), and coordinator workflows with branch hygiene.",
       "category": "workflow",
-      "keywords": ["personas", "team", "agents", "worktrees", "coordinator"]
+      "keywords": [
+        "personas",
+        "team",
+        "agents",
+        "worktrees",
+        "coordinator"
+      ]
     },
     {
       "name": "claude-conductor",
-      "source": { "source": "github", "repo": "code-katz/claude-conductor" },
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-conductor"
+      },
       "description": "Track and coordinate parallel Claude Code sessions: SESSIONS.md registry with personas and dependency-aware merge order, live dashboard with per-session cost, and hooks that auto-link sessions and keep statuses updating themselves.",
       "category": "workflow",
-      "keywords": ["sessions", "parallel", "dashboard", "merge-order", "worktrees"]
+      "keywords": [
+        "sessions",
+        "parallel",
+        "dashboard",
+        "merge-order",
+        "worktrees"
+      ]
+    },
+    {
+      "name": "claude-todo",
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-todo-skill"
+      },
+      "description": "Per-project TODOS.md scratchpad: two-second capture for ideas and tasks that must survive the session, with persona routing and parallel/blocked grouping. Complements (does not replace) Claude Code's session-scoped native task list.",
+      "category": "workflow",
+      "keywords": [
+        "todo",
+        "backlog",
+        "tasks",
+        "scratchpad"
+      ]
+    },
+    {
+      "name": "claude-plans",
+      "source": {
+        "source": "github",
+        "repo": "code-katz/claude-plans-skill"
+      },
+      "description": "Archive finalized implementation plans to project-local plans/ directories with lifecycle status (active, executed, superseded, rejected) and a global index for cross-project lookup.",
+      "category": "workflow",
+      "keywords": [
+        "plans",
+        "plan-mode",
+        "archive",
+        "index"
+      ]
     }
   ]
 }

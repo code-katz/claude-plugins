@@ -27,8 +27,10 @@ Installing as plugins registers everything automatically: slash commands, person
 |---|---|---|
 | **claude-team** | Twelve named specialist personas (Akira, Sasha, Robin, ...) with session-scoped `/name` switching, delegation subagents on Fable/Opus/Sonnet model tiers, a persona session launcher, and coordinator workflows with branch hygiene | [claude-team-cli](https://github.com/code-katz/claude-team-cli) |
 | **claude-conductor** | Tracks parallel Claude Code sessions in a committed SESSIONS.md: personas, dependency-aware merge order, live dashboard with per-session cost, and hooks that auto-link sessions and keep statuses current | [claude-conductor](https://github.com/code-katz/claude-conductor) |
+| **claude-todo** | Per-project TODOS.md scratchpad: two-second capture for ideas that must survive the session, with persona routing. Complements Claude Code's session-scoped native task list | [claude-todo-skill](https://github.com/code-katz/claude-todo-skill) |
+| **claude-plans** | Archives finalized implementation plans to project-local plans/ directories with lifecycle status and a global cross-project index | [claude-plans-skill](https://github.com/code-katz/claude-plans-skill) |
 
-The two are designed to work together: `/parallel` (claude-team) plans a sprint into isolated worktree sessions, and the conductor tracks who is doing what, in which session, and what merges first.
+The family is designed to work together: ideas land in `/todo`, plans get archived by `/plans`, `/parallel` (claude-team) turns a plan into isolated worktree sessions, and the conductor tracks who is doing what, in which session, and what merges first.
 
 ## Coming to the marketplace
 
@@ -36,8 +38,6 @@ The rest of the Code Katz family will be added as each gains a plugin manifest:
 
 - [claude-devlog-skill](https://github.com/code-katz/claude-devlog-skill) — structured development changelog
 - [claude-roadmap-skill](https://github.com/code-katz/claude-roadmap-skill) — living product roadmap
-- [claude-plans-skill](https://github.com/code-katz/claude-plans-skill) — archived implementation plans
-- [claude-todo-skill](https://github.com/code-katz/claude-todo-skill) — lightweight task scratchpad
 - [claude-publish-agent](https://github.com/code-katz/claude-publish-agent) — publish markdown to platforms
 
 ## License

@@ -14,7 +14,7 @@
         "source": "github",
         "repo": "code-katz/claude-team-cli"
       },
-      "description": "Twelve named specialist personas: session-scoped /name switching, delegation subagents with Fable/Opus/Sonnet model tiers, a persona session launcher (claude-team launch), and coordinator workflows with branch hygiene.",
+      "description": "More than a dozen named specialist personas: session-scoped /name switching, delegation subagents with Fable/Opus/Sonnet model tiers, a persona session launcher (claude-team launch), and coordinator workflows with branch hygiene.",
       "category": "workflow",
       "keywords": [
         "personas",

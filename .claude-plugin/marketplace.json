@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "The Code Katz suite for Claude Code: the ck product-definition pipeline with specialist personas on model tiers, parallel-session coordination, and the durable-artifact skills (devlog, roadmap, plans, todo, publish).",
-    "version": "1.4.0"
+    "version": "1.4.1"
   },
   "plugins": [
     {
@@ -120,8 +120,8 @@
     {
       "name": "ck",
       "source": {
-        "source": "github",
-        "repo": "code-katz/ck"
+        "source": "url",
+        "url": "https://github.com/code-katz/ck.git"
       },
       "description": "Code Katz personas and workflows: the product-definition pipeline from idea to designed feature (/ck:opportunity, market-research, brief, prd, team, roadmap, architecture, brand-guide, design), /ck:panel (three lenses on three models), /ck:next, and 21 personas as ck:<name> subagents and /ck:<name> switch commands. Phase one of the code-katz plugin; replaces claude-team, which must be uninstalled first.",
       "category": "workflow",

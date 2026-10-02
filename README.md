@@ -15,7 +15,7 @@ Add the marketplace once, inside any Claude Code session:
 Then install what you want:
 
 ```
-/plugin install claude-team@code-katz
+/plugin install ck@code-katz
 /plugin install claude-conductor@code-katz
 ```
 
@@ -25,6 +25,7 @@ Installing as plugins registers everything automatically: slash commands, person
 
 | Plugin | What it does | Source |
 |---|---|---|
+| **ck** | The product-definition pipeline from an idea to a designed feature (`/ck:opportunity`, `market-research`, `brief`, `prd`, `team`, `roadmap`, `architecture`, `brand-guide`, `design`), `/ck:panel` (three lenses on three models), `/ck:next`, and 21 personas as `ck:<name>` subagents and `/ck:<name>` switch commands. Every document has a contract and lands in your repository; reviews happen on pages you comment on. Replaces claude-team, which must be uninstalled first | [ck](https://github.com/code-katz/ck) |
 | **claude-team** | Twelve named specialist personas (Akira, Sasha, Robin, ...) with session-scoped `/name` switching, delegation subagents on Fable/Opus/Sonnet model tiers, a persona session launcher, and coordinator workflows with branch hygiene | [claude-team-cli](https://github.com/code-katz/claude-team-cli) |
 | **claude-conductor** | Tracks parallel Claude Code sessions in a committed SESSIONS.md: personas, dependency-aware merge order, live dashboard with per-session cost, and hooks that auto-link sessions and keep statuses current | [claude-conductor](https://github.com/code-katz/claude-conductor) |
 | **claude-todo** | Per-project TODOS.md scratchpad: two-second capture for ideas that must survive the session, with persona routing. Complements Claude Code's session-scoped native task list | [claude-todo-skill](https://github.com/code-katz/claude-todo-skill) |
@@ -33,7 +34,7 @@ Installing as plugins registers everything automatically: slash commands, person
 | **claude-roadmap** | Living product roadmap (ROADMAP.md) with tiered priorities and an append-only revision history of every priority call | [claude-roadmap-skill](https://github.com/code-katz/claude-roadmap-skill) |
 | **claude-publish** | Publishes markdown to blogging platforms (Medium via gist import) with an on-brand content kit. CLI prerequisite: `pipx install git+https://github.com/code-katz/claude-publish-agent` | [claude-publish-agent](https://github.com/code-katz/claude-publish-agent) |
 
-The family is designed to work together: ideas land in `/todo`, plans get archived by `/plans`, `/parallel` (claude-team) turns a plan into isolated worktree sessions, the conductor tracks who is doing what and what merges first, `/devlog` captures what was decided and why, and `/roadmap` records how priorities evolved.
+The family is designed to work together: `ck` takes an idea through opportunity, brief, PRD, team, roadmap, architecture, brand, and design, each as a committed document; ideas land in `/todo`, plans get archived by `/plans`, `/parallel` (claude-team) turns a plan into isolated worktree sessions, the conductor tracks who is doing what and what merges first, `/devlog` captures what was decided and why, and `/roadmap` records how priorities evolved.
 
 ## License
 

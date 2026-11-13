@@ -122,8 +122,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/code-katz/ck.git",
-        "ref": "v0.1.34",
-        "sha": "986d7005908ea437288a6ecde2eda13905c172a1"
+        "ref": "v0.1.35",
+        "sha": "768e57d49b12557d28f39285cbd9c14f7a21e1cd"
       },
       "description": "Code Katz personas and workflows: the product-definition pipeline from idea to designed feature (/ck:opportunity, market-research, brief, prd, team, roadmap, architecture, brand-guide, design), /ck:panel (three lenses on three models), /ck:next, and 21 personas as ck:<name> subagents and /ck:<name> switch commands. Phase one of the code-katz plugin; replaces claude-team, which must be uninstalled first.",
       "category": "workflow",
